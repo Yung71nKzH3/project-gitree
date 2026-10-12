@@ -1,0 +1,6 @@
+{
+  "name": "GitTree - GitHub Repo Virtual Explorer & Organizer",
+  "description": "Organize public and private GitHub repositories into virtual folder trees, color-coded bento grids, and custom directories with drag-and-drop.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

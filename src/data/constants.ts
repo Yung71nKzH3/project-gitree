@@ -1,0 +1,100 @@
+import { FolderColor } from '../types';
+
+export const FOLDER_COLORS: FolderColor[] = [
+  {
+    id: 'emerald',
+    name: 'Emerald (Uni / Academics)',
+    hex: '#10B981',
+    badgeBg: 'bg-emerald-500/15',
+    badgeText: 'text-emerald-400',
+    borderClass: 'border-emerald-500/30 hover:border-emerald-500/50',
+    glowClass: 'group-hover:shadow-[0_0_20px_rgba(16,185,129,0.15)]',
+  },
+  {
+    id: 'blue',
+    name: 'Cobalt (Core Projects)',
+    hex: '#3B82F6',
+    badgeBg: 'bg-blue-500/15',
+    badgeText: 'text-blue-400',
+    borderClass: 'border-blue-500/30 hover:border-blue-500/50',
+    glowClass: 'group-hover:shadow-[0_0_20px_rgba(59,130,246,0.15)]',
+  },
+  {
+    id: 'purple',
+    name: 'Violet (Work / Client)',
+    hex: '#8B5CF6',
+    badgeBg: 'bg-purple-500/15',
+    badgeText: 'text-purple-400',
+    borderClass: 'border-purple-500/30 hover:border-purple-500/50',
+    glowClass: 'group-hover:shadow-[0_0_20px_rgba(139,92,246,0.15)]',
+  },
+  {
+    id: 'amber',
+    name: 'Amber (Experiments & Labs)',
+    hex: '#F59E0B',
+    badgeBg: 'bg-amber-500/15',
+    badgeText: 'text-amber-400',
+    borderClass: 'border-amber-500/30 hover:border-amber-500/50',
+    glowClass: 'group-hover:shadow-[0_0_20px_rgba(245,158,11,0.15)]',
+  },
+  {
+    id: 'rose',
+    name: 'Rose (Personal / High Priority)',
+    hex: '#F43F5E',
+    badgeBg: 'bg-rose-500/15',
+    badgeText: 'text-rose-400',
+    borderClass: 'border-rose-500/30 hover:border-rose-500/50',
+    glowClass: 'group-hover:shadow-[0_0_20px_rgba(244,63,94,0.15)]',
+  },
+  {
+    id: 'cyan',
+    name: 'Cyan (Utilities & CLI)',
+    hex: '#06B6D4',
+    badgeBg: 'bg-cyan-500/15',
+    badgeText: 'text-cyan-400',
+    borderClass: 'border-cyan-500/30 hover:border-cyan-500/50',
+    glowClass: 'group-hover:shadow-[0_0_20px_rgba(6,182,212,0.15)]',
+  },
+  {
+    id: 'teal',
+    name: 'Teal (Open Source)',
+    hex: '#14B8A6',
+    badgeBg: 'bg-teal-500/15',
+    badgeText: 'text-teal-400',
+    borderClass: 'border-teal-500/30 hover:border-teal-500/50',
+    glowClass: 'group-hover:shadow-[0_0_20px_rgba(20,184,166,0.15)]',
+  },
+  {
+    id: 'slate',
+    name: 'Slate (Archive / Inactive)',
+    hex: '#64748B',
+    badgeBg: 'bg-slate-500/15',
+    badgeText: 'text-slate-400',
+    borderClass: 'border-slate-500/30 hover:border-slate-500/50',
+    glowClass: 'group-hover:shadow-[0_0_20px_rgba(100,116,139,0.15)]',
+  },
+];
+
+export const LANGUAGE_COLORS: Record<string, string> = {
+  TypeScript: '#3178C6',
+  JavaScript: '#F7DF1E',
+  Python: '#3776AB',
+  Rust: '#DEA584',
+  'C++': '#F34B7D',
+  C: '#555555',
+  Java: '#B07219',
+  Go: '#00ADD8',
+  HTML: '#E34C26',
+  CSS: '#563D7C',
+  Swift: '#F05138',
+  Kotlin: '#A97BFF',
+  Ruby: '#701516',
+  PHP: '#4F5D95',
+  Shell: '#89E051',
+  Vue: '#41B883',
+  Jupyter: '#DA5B0B',
+};
+
+export function getFolderColor(colorId: string): FolderColor {
+  return FOLDER_COLORS.find((c) => c.id === colorId) || FOLDER_COLORS[0];
+}
